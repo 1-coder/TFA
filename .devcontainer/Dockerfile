@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     bison \
     flex \
     device-tree-compiler \
+    libssl-dev \
     # Clean up apt cache to reduce final image size
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*

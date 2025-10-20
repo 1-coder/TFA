@@ -1,0 +1,24 @@
+{
+  "name": "Trusted Firmware-A Development Environment",
+  
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  
+  "runArgs": [
+    "--init"
+  ],
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.makefile-tools",
+        "GitHub.codespaces"
+      ]
+    }
+  }
+}
